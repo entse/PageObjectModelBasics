@@ -1,4 +1,6 @@
 package pages.CRM;
 
-public class CRMHomePage {
+import base.Page;
+
+public class CRMHomePage extends Page {
 }
