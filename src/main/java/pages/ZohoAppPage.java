@@ -3,6 +3,7 @@ package pages;
 import base.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pages.CRM.CRMHomePage;
 
 public class ZohoAppPage extends Page {
 
@@ -13,9 +14,10 @@ public class ZohoAppPage extends Page {
     }
 
 
-    public void goToCRM(){
+    public CRMHomePage goToCRM(){
 
         driver.findElement(By.xpath("//div[text() = 'CRM']")).click();
+        return new CRMHomePage();
 
     }
 

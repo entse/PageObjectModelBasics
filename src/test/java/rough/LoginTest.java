@@ -4,6 +4,8 @@ import base.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.CRM.Accounts.AccountsPage;
+import pages.CRM.Accounts.CreateAccountPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ZohoAppPage;
@@ -16,14 +18,11 @@ public class LoginTest {
 
 
         HomePage home = new HomePage();
-        home.goToLogin();
-
-        LoginPage login = new LoginPage();
-        login.doLogin("trainer@way2automation.com", "Selenium@123");
-
-        ZohoAppPage zp = new ZohoAppPage();
+        LoginPage lp = home.goToLogin();
+        ZohoAppPage zp = lp.doLogin("trainer@way2automation.com", "Selenium@123");
         zp.goToCRM();
-
-        Page.menu.gotoAccounts();
+        AccountsPage account = Page.menu.gotoAccounts();
+        CreateAccountPage cap = account.gotoCreateAccounts();
+        cap.createAccount("Alex");
     }
 }

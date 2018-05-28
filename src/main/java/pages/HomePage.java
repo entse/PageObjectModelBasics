@@ -20,8 +20,11 @@ public class HomePage extends Page {
         driver.findElement(By.xpath("//a[@class ='signup']")).click();
     }
 
-    public void goToLogin(){
+    public LoginPage goToLogin(){
+
         driver.findElement(By.xpath("//a[@class ='signin']")).click();
+        return new LoginPage();
+
     }
 
 

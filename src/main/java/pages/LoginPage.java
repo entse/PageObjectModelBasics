@@ -8,10 +8,12 @@ public class LoginPage extends Page {
 
 
 
-    public void doLogin(String username, String password){
+    public ZohoAppPage doLogin(String username, String password){
+
         driver.findElement(By.xpath("//input[@name = 'lid']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@name = 'pwd']")).sendKeys(password);
         driver.findElement(By.xpath("//div[@id = 'signin_submit']")).click();
+        return new ZohoAppPage();
 
     }
 

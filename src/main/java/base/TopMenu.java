@@ -2,6 +2,7 @@ package base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pages.CRM.Accounts.AccountsPage;
 
 public class TopMenu {
 
@@ -25,9 +26,10 @@ public class TopMenu {
 
     }
 
-    public void gotoAccounts(){
+    public AccountsPage gotoAccounts(){
 
         driver.findElement(By.xpath("//a[text()='Accounts']")).click();
+        return new AccountsPage();
 
     }
 
