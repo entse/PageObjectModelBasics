@@ -22,7 +22,7 @@ public class HomePage extends Page {
 
     public LoginPage goToLogin(){
 
-        driver.findElement(By.xpath("//a[@class ='signin']")).click();
+        click("loginlink_XPATH");
         return new LoginPage();
 
     }

@@ -82,8 +82,7 @@ public class Page {
 
             if (config.getProperty("browser").equals("chrome")){
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
-                driver = new ChromeDriver();
-                log.debug("Chrome launched!");
+
 
                 Map<String, Object> prefs = new HashMap<String, Object>();
                 prefs.put("profile.default_content_setting_values.notifications", 2);
@@ -95,6 +94,7 @@ public class Page {
                 options.addArguments("--disable-infobars");
 
                 driver = new ChromeDriver(options);
+                log.debug("Chrome launched!");
 
             }
             else if (config.getProperty("browser").equals("IE")){
@@ -119,6 +119,11 @@ public class Page {
 
         }
     }
+
+    public static void quit(){
+        driver.quit();
+    }
+
 
     public void click(String locator){
         if(locator.endsWith("_CSS")) {
