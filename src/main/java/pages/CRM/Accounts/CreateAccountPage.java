@@ -11,7 +11,8 @@ public class CreateAccountPage extends Page{
 
     public void createAccount(String accountName){
 
-        driver.findElement(By.xpath("//input[@data-colname='ACCOUNTNAME']")).sendKeys(accountName);
+        type("accountnamefield_XPATH", accountName);
+
 
     }
 }

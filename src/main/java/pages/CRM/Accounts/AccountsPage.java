@@ -10,7 +10,7 @@ public class AccountsPage extends Page {
 
     public CreateAccountPage gotoCreateAccounts(){
 
-        driver.findElement(By.xpath("//button[text() = 'Create Account']")).click();
+        click("createaccountbtn_XPATH");
         return new CreateAccountPage();
 
 

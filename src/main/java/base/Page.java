@@ -125,7 +125,7 @@ public class Page {
     }
 
 
-    public void click(String locator){
+    public static void click(String locator){
         if(locator.endsWith("_CSS")) {
             driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
         } else if(locator.endsWith("_XPATH")) {
@@ -139,7 +139,7 @@ public class Page {
 
 
 
-    public void type(String locator, String value){
+    public static void type(String locator, String value){
         if (locator.endsWith("_CSS")) {
             driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
         } else if (locator.endsWith("_XPATH")) {

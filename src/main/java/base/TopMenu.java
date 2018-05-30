@@ -28,7 +28,7 @@ public class TopMenu {
 
     public AccountsPage gotoAccounts(){
 
-        driver.findElement(By.xpath("//a[text()='Accounts']")).click();
+        Page.click("accountstab_XPATH");
         return new AccountsPage();
 
     }
