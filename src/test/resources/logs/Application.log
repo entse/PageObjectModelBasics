@@ -1,0 +1,7 @@
+30/05/2018 22:12:01 devpinoyLogger Config file loaded!
+30/05/2018 22:12:01 devpinoyLogger OR file loaded!
+30/05/2018 22:12:21 devpinoyLogger Navigated to :https://www.zoho.com/
+30/05/2018 22:12:22 devpinoyLogger Clicking on Element: loginlink_XPATH
+30/05/2018 22:12:23 devpinoyLogger Typing in an Element: email_XPATH entered value as trainer@way2automation.com
+30/05/2018 22:12:23 devpinoyLogger Typing in an Element: password_XPATH entered value as Selenium@123
+30/05/2018 22:12:23 devpinoyLogger Clicking on Element: signinBtn_XPATH

@@ -133,6 +133,7 @@ public class Page {
         } else if (locator.endsWith("_ID")) {
             driver.findElement(By.id(OR.getProperty(locator))).click();
         }
+        log.debug("Clicking on Element: " + locator);
         test.log(LogStatus.INFO, "Clicking on: " + locator);
     }
 
@@ -146,6 +147,7 @@ public class Page {
         } else if (locator.endsWith("_ID")) {
             driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
         }
+        log.debug("Typing in an Element: " + locator + " entered value as " + value);
         test.log(LogStatus.INFO, "Typing in: " + locator + " entered value as " + value);
 
     }
@@ -162,6 +164,7 @@ public class Page {
         Select select = new Select(dropdown);
         select.selectByVisibleText(value);
 
+        log.debug("Selecting from dropdown: " + locator + " value as " + value);
         test.log(LogStatus.INFO, "Selecting from dropdown: " + locator + " value as " + value);
 
     }

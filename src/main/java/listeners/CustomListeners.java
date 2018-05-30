@@ -78,10 +78,10 @@ public class CustomListeners extends Page implements ITestListener, ISuiteListen
     @Override
     public void onFinish(ISuite suite) {
 
-        /*MonitoringMail mail = new MonitoringMail();
+        MonitoringMail mail = new MonitoringMail();
         String messageBody = null;
         try {
-            messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/DataDrivenLiveProject/Extent_20Reports/";
+            messageBody = "http://" + InetAddress.getLocalHost().getHostAddress() + ":8080/job/Page%20Object%20Model/Extent_20Report/";
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
@@ -89,6 +89,6 @@ public class CustomListeners extends Page implements ITestListener, ISuiteListen
             mail.sendMail(TestConfig.server, TestConfig.from, TestConfig.to, TestConfig.subject, messageBody);
         } catch (MessagingException e) {
             e.printStackTrace();
-        }*/
+        }
     }
 }

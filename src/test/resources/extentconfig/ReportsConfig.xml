@@ -14,13 +14,13 @@
         <protocol>https</protocol>
         
         <!-- title of the document -->
-        <documentTitle>testAutomation Reports</documentTitle>
+        <documentTitle>entse Reports</documentTitle>
         
         <!-- report name - displayed at top-nav -->
         <reportName>Automation Report for</reportName>
         
         <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline>Data Driven Framework</reportHeadline>
+        <reportHeadline>Page Object Model</reportHeadline>
         
         <!-- global date format override -->
         <!-- defaults to yyyy-MM-dd -->
